@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Data Form</title>
+</head>
+<body>
+ 
+   
+    <input type="text" id="memberName" placeholder="Enter team member name">
+ 
+    
+    <select id="memberCategory">
+        <option value="">Select Category</option>
+        <option>Batsman</option>
+        <option>Bowler</option>
+        <option>All Rounder</option>
+        <option>Batting Coach</option>
+        <option>Bowling Coach</option>
+        <option>Team Officials</option>
+    </select>
+ 
+   
+    <button id="addBtn">Add</button>
+ 
+    
+    <div id="outputArea" style="margin-top:20px;"></div>
+ 
+    <br><br>
+ 
+    
+    <button id="saveBtn">Save</button>
+    <span id="errorMsg" style="color:red; margin-left:10px; font-weight:bold;"></span>
+ 
+    <br><br>
+ 
+    
+    <div id="finalOutput"
+         style="width:420px; min-height:70px; border:1px solid black; padding:10px;">
+    </div>
+ 
+    <script>
+        const outputArea = document.getElementById("outputArea");
+ 
+        const categoryBox = document.createElement("div");
+        categoryBox.style.width = "200px";
+        categoryBox.style.height = "34px";
+        categoryBox.style.border = "1px solid black";
+        categoryBox.style.display = "inline-block";
+        categoryBox.style.verticalAlign = "top";
+        categoryBox.style.padding = "5px";
+ 
+        const nameBox = document.createElement("input");
+        nameBox.style.height = "40px";
+        nameBox.style.width = "200px";
+        nameBox.style.marginRight = "10px";
+        nameBox.readOnly = true;
+ 
+        outputArea.appendChild(nameBox);
+        outputArea.appendChild(categoryBox);
+ 
+       
+        document.getElementById("addBtn").addEventListener("click", function () {
+            const name = document.getElementById("memberName").value;
+            const category = document.getElementById("memberCategory").value;
+ 
+            categoryBox.textContent = category;
+            nameBox.value = name;
+ 
+            document.getElementById("memberName").value = "";
+        });
+ 
+       
+        document.getElementById("saveBtn").addEventListener("click", function () {
+            const finalOutput = document.getElementById("finalOutput");
+            const errorMsg = document.getElementById("errorMsg");
+ 
+            const savedName = nameBox.value;
+            const savedCategory = categoryBox.textContent;
+ 
+            
+            if (savedName === "" || savedCategory === "") {
+                errorMsg.textContent = "Can not save! Please enter the data properly.";
+                finalOutput.textContent = "";
+            } else {
+                errorMsg.textContent = "";
+                finalOutput.textContent = savedName + " is a " + savedCategory;
+            }
+        });
+    </script>
+ 
+</body>
+</html>
