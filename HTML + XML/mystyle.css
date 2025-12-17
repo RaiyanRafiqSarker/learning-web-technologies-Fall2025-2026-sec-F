@@ -1,0 +1,19 @@
+body{
+    background-color: ivory;
+}
+
+h1{
+    color: brown;
+}
+
+label{
+    color: black;
+}
+
+table{
+    border: 1px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+}

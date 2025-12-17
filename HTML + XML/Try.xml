@@ -1,0 +1,21 @@
+<students>
+  
+  <Student>
+   <id sr="1"> 1 </id>
+   <name> Raiyan </name>
+   <department> CSE </department>
+  </Student>
+
+  <Student>
+   <id sr="2"> 2 </id>
+   <name> Ankan </name>
+   <department> CSE </department>
+  </Student>
+
+  <Student>
+   <id sr="3"> 3 </id>
+   <name> Nishad </name>
+   <department> CSE </department>
+  </Student>
+
+</students>
