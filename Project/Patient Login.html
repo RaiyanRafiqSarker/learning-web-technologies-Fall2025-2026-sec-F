@@ -1,0 +1,95 @@
+<html>
+ <head>
+        <title>Patient Login</title>
+        <link rel="stylesheet" href="design.css">
+ </head>
+
+  <body>
+        <h1 class="dotted" style="color: black;" align="Center">Patient Login</h1>
+
+     <form align="center" action="Patient Login Check.php" method="post" enctype="">
+        <fieldset>
+            <legend style="color: red;">Patient Login Form</legend>
+        <table class="tablelayout">
+            
+            <tr>
+            <td><label for="id">Mobile No:</label><br></td>
+            <td><input id="mobileno" type="text" value=""><br></td>
+            </tr>
+
+            <tr>
+            <td><label for="password">Enter your Password:</label><br></td>
+            <td><input id="password" type="password" value=""><br></td>
+            </tr>
+
+            <tr>
+             <td><label for="mail">Mail Address:</label><br></td>
+             <td><input id="email" type="email" mail="" value=""/><br>
+            </tr>
+
+            <tr>
+            <td><label for="name">Enter your OTP:</label><br></td>
+            <td><input id="otp" type="password" name="" value=""><br></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+            <td>
+                <input type="submit" name="" value="Login"/>
+                <input type="reset" name="" value="Reload"/>
+            </td>
+            </tr>
+
+            
+        </table> 
+         <p align="Center">Didn't have an account?<a href="Patient Registration.html">Register Now</a>.</p>
+        </fieldset>
+  
+      </form>
+<!--
+      <script>
+        function validateform(event){
+            event.preventDefault();//reload when I click reload on browser
+        const mobileno = document.getElementById("mobileno").value;
+        const password = document.getElementById("password").value;
+        const email = document.getElementById("email").value;
+        const otp = document.getElementById("otp").value;
+        
+
+        if(otp=="" || mobileno=="" || password==""|| email=="") {
+                alert("Please fill all the fields.");
+
+                return false;
+            }
+
+        else if(password.length<8){
+            alert("Password  must be grater than 8 character");
+
+            return false;
+        }
+
+        else if(otp.length<4){
+            alert("Enter your OTP Correctly.It must be 4 character.");
+
+            return false;
+        }
+        
+            alert("Logged in Successfully.");
+        
+
+    }
+
+
+
+
+
+
+      </script>
+    -->
+  </body>
+
+  
+    <footer>
+        <h1 style="color: white;" align="Center"><b>Thanks for your support</b></h1>
+    </footer>
+</html>

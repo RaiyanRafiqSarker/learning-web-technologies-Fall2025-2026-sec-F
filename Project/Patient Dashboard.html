@@ -1,0 +1,55 @@
+<html>
+ <head>
+        <title>Patient Dashboard</title>
+        <link rel="stylesheet" href="design.css">
+ </head>
+
+  <body>
+        <h1 class="dotted" style="color: black;" align="Center">Welcome!!!</h1>
+
+     <form align="center" onsubmit="validateform(event)">
+        <fieldset>
+            <legend style="color: red;">Patient Dashboard</legend>
+         <table class="tablelayout">
+            
+            <tr>
+            <td><label>View your medical records:</label><br></td>
+            <td><a href="View Medical History.html">View History</a></td>
+            </tr>
+
+            <tr>
+            <td><label>Give access to doctors to view reports:</label><br></td>
+            <td><a href="Grant Access to Doctor.html">Grant Access</a></td>
+            </tr>
+
+            <tr>
+            <td><label>Book your Appointment:</label><br></td>
+            <td><a href="Book Appointment.html">Take Appointment</a></td>
+            </tr>
+
+            <tr>
+            <td><label></label><br></td>
+            <td><a href="Patient Login.html">Logout</a></td>
+            </tr>
+            
+
+
+        </table>
+        </fieldset>
+  
+      </form>
+
+      <script>
+        function validateform(event){
+            event.preventDefault();//reload when I click reload on browser
+
+
+
+      </script>
+  </body>
+
+  
+    <footer>
+        <h1 style="color: white;" align="Center"><b>Thanks for your support</b></h1>
+    </footer>
+</html>
